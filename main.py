@@ -1,8 +1,9 @@
 house_price: int = int(input("What is the price of your house?\n>"))
-tax_price: int = int(input("What is the monthy tax price?\n>"))
-insurance: int = int(input("How much is insurance, monthy?\n>"))
-percent: int = int(input("How much of the total is the bank making you pay? (percent, 1-100)\n>"))
-interest_rate: int = int(input("What is the interest rate?\n>"))
+tax_price: int = int(input("What is the monthy tax price?\n>") or "1000")
+insurance: int = int(input("How much is insurance, monthy?\n>") or "100")
+percent: int = int(input("How much of the total is the bank making you pay? (percent, 1-100)\n>") or "20")
+interest_rate: int = int(input("What is the interest rate?\n>") or "6")
+years: int = int(input("How many years is this loan?\n>") or "30")
 real_interest_rate: int = interest_rate  # fixme
 
 loan_amount: int =  house_price * (percent / 100)
