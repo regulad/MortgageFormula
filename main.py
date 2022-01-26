@@ -13,7 +13,7 @@ real_interest_rate: int = interest_rate  # fixme
 loan_amount: int =  house_price * (percent / 100)
 print(f"The cost of the house is ${format_string('%d', round(house_price), grouping=True)}.")
 print(f"The monthly tax prices are ${format_string('%d', round(tax_price), grouping=True)}.")
-print(f"The cost insurance on the house is ${format_string('%d', round(insurance), grouping=True)}.")
+print(f"The cost of insurance on the house is ${format_string('%d', round(insurance), grouping=True)}.")
 print(f"The interest rate on the loan is {round(interest_rate)}%.")
 print(f"If {round(percent)}% is paid upfront over the course of {round(years)} years,")
 print(f"The loan amount is ${format_string('%d', round(loan_amount), grouping=True)}.")
